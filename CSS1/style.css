@@ -1,0 +1,33 @@
+body{
+    background-color: lemonchiffon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    color:rgb(11, 66, 197);
+    text-align: center;
+            
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    color: rgb(182, 15, 233);
+    line-height: 1.5; /*espaçamento entre as linhas*/
+}
+
+#subtitulo{
+    color: deeppink;
+    font-size: 2rem;
+}
+
+.aviso{
+    color: red;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    
+}
