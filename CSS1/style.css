@@ -48,6 +48,24 @@ p{
 }
 
 .lista3 {
-    list-style-image: url("icone.png"); /* marcador com imagem */
+    list-style-image: url("icon.png"); /* marcador com imagem */
+    size-adjust: 2px;
 }
+
+.tabela {
+    border-collapse: collapse; /* une bordas adjacentes */
+    width: 100%;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #ea82ea; /* linhas alternadas */
+}
+
 
