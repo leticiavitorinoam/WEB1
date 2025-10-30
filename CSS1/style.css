@@ -1,5 +1,8 @@
 body{
     background-color: lemonchiffon;
+    background-image: url("back01.jpg");
+    background-position: center;
+    background-size: 1400px ;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
