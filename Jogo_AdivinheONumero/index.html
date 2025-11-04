@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <h1>Adivinhe o número</h1>
+    </header>
+    <section>
+        <div id="status-bar">
+            <p id="status">+ + + + + + + + + +</p>
+
+        </div>
+        <div id="numero">
+            <p>Número secreto entre 1 e 100. </p>
+            <button id="btIniciar">Iniciar</button><br><br>
+            Palpite: <input type="number" id="num1"><br><br>           
+            <button id="btChutar">Chutar</button>
+            
+        </div>
+        <div id="resultado">
+            <p><strong>Histórico de Palpites</strong></p>
+            <p id="txtResultado">...</p>
+        </div>
+
+    </section>
+    <footer>
+      <p id="txtRodape">Desenvolvido na displina WEB1</p>
+    </footer>
+
+    <script src="interacao.js"></script>
+</body>
+</html>
