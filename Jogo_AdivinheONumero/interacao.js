@@ -60,7 +60,7 @@ function chutou() {
 function numvidas() {
     txtStatus.innerHTML = "";
     for (let i = 1; i <= vidas; i++) {
-        txtStatus.innerHTML += "+ "
+        txtStatus.innerHTML += "♥ "
     }
     if (vidas == 0) {
         resultado.innerHTML += "Você perdeu!"
