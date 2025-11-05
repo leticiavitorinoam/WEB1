@@ -3,6 +3,8 @@ body{
 }
 h1{
     text-align: center;
+    color: #DC143C;
+    font-size: 70px;
 }
 section{
     background-color: #f08b8b;
