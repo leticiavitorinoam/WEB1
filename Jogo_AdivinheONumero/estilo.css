@@ -1,12 +1,55 @@
-body{
+body {
     background-color: #e3bba9;
+    font-family: Arial, sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
     color: #DC143C;
     font-size: 70px;
 }
-section{
+
+/* Transições */
+.fade {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.fade.mostrar {
+    opacity: 1;
+}
+
+/* Tela inicial */
+#tela-inicial {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#menu {
+    background-color: #f08b8b;
+    display: inline-block;
+    padding: 40px 60px;
+    border-radius: 15px;
+}
+
+.botao-nivel {
+    display: block;
+    background-color: #F7CAC9;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 50px;
+    margin: 20px auto;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-nivel:hover {
+    background-color: #DC143C;
+}
+
+/* Tela de jogo */
+section {
     background-color: #f08b8b;
     width: 700px;
     height: 770px;
@@ -14,15 +57,18 @@ section{
     margin: auto;
     border-radius: 10px;
 }
-div#numero{
-    background-color:#F7CAC9;
+
+div#numero {
+    background-color: #F7CAC9;
     text-align: center;
     border-radius: 10px;
-    height: 250px;
+    height: 220px; 
     width: 690px;
     margin: auto;
+    padding-top: 10px; 
 }
-div#resultado{
+
+div#resultado {
     background-color: #F7CAC9;
     text-align: center;
     border-radius: 10px;
@@ -30,7 +76,8 @@ div#resultado{
     width: 690px;
     margin: auto;
 }
-div#status-bar{
+
+div#status-bar {
     background-color: antiquewhite;
     text-align: right;
     border-radius: 10px;
@@ -38,16 +85,51 @@ div#status-bar{
     width: 650px;
     margin: auto;
 }
-p#status{
+
+p#status {
     padding-right: 20px;
     font-weight: bold;
-
 }
-p#txtRodape{
+
+p#txtRodape {
     text-align: center;
 }
-p#txtResultado{
+
+p#txtResultado {
     text-align: left;
     padding-left: 20px;
     font-size: 20px;
+}
+
+#btVoltar {
+    background-color: #DC143C;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btChutar {
+    display: inline-block; 
+    font-size: 24px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#btChutar:hover, #btVoltar:hover {
+    background-color: #b3122f;
+}
+
+#num1 {
+    font-size: 24px;
+    padding: 10px;
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid #DC143C;
+    text-align: center;
+    display: inline-block;
 }
