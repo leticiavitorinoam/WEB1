@@ -87,7 +87,7 @@ function chutou() {
     }
 
     if (num == numeroSecreto) {
-        resultado.innerHTML += `<strong>🎉🎉Você acertou!🎉🎉</strong><br>`;
+        resultado.innerHTML += `<strong>🎉🎉Você acertou!🎉🎉 O número era ${numeroSecreto}.</strong><br>`;
         fimDeJogo();
     } else if (num > numeroSecreto) {
         resultado.innerHTML += `Palpite: ${num} - O número é Menor!<br>`;
