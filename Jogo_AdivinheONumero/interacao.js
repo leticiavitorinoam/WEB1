@@ -14,7 +14,6 @@ let msgNumero = document.getElementById("msgNumero");
 let telaInicial = document.getElementById("tela-inicial");
 let telaJogo = document.getElementById("tela-jogo");
 
-// Aplica o fade inicial
 window.addEventListener("load", () => {
     telaInicial.classList.add("mostrar");
 });
@@ -88,7 +87,7 @@ function chutou() {
     }
 
     if (num == numeroSecreto) {
-        resultado.innerHTML += `<strong>🎉 Parabéns, você acertou!</strong><br>`;
+        resultado.innerHTML += `<strong>🎉🎉Você acertou!🎉🎉</strong><br>`;
         fimDeJogo();
     } else if (num > numeroSecreto) {
         resultado.innerHTML += `Palpite: ${num} - O número é Menor!<br>`;
@@ -109,7 +108,7 @@ function atualizarVidas() {
         txtStatus.innerHTML += "♥ ";
     }
     if (vidas == 0) {
-        resultado.innerHTML += `<strong>💀 Você perdeu! O número era ${numeroSecreto}.</strong>`;
+        resultado.innerHTML += `<strong>💀💀 Você perdeu! 💀💀 O número era ${numeroSecreto}.</strong>`;
         fimDeJogo();
     }
 }
@@ -129,4 +128,3 @@ function voltarMenu() {
         resultado.innerHTML = "";
     }, 800);
 }
-
