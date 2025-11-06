@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +7,49 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-       <h1>Adivinhe o número</h1>
-    </header>
-    <section>
-        <div id="status-bar">
-            <p id="status" style="color: red; font-size: 40px;">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</p>
+    <!-- Tela inicial -->
+    <div id="tela-inicial" class="fade">
+        <h1>Adivinhe o Número</h1>
+        <div id="menu">
+            <p style="font-size: 28px;">Selecione o nível de dificuldade:</p>
+            <button class="botao-nivel" id="nivel-facil">Fácil</button>
+            <button class="botao-nivel" id="nivel-medio">Médio</button>
+            <button class="botao-nivel" id="nivel-dificil">Difícil</button>
+        </div>
+    </div>
 
-        </div>
-        <div id="numero">
-            <p style="font-size: 33px;"> <strong>O número secreto está entre 1 e 100.</strong></p>
-            <button id="btIniciar">Iniciar</button><br><br>
-            Palpite: <input type="number" id="num1"><br><br>           
-            <button id="btChutar">Chutar</button>
-            
-        </div>
-        <div id="resultado">
-            <p style="font-size: 33px;"><strong>Histórico de Palpites</strong></p>
-            <p id="txtResultado">...</p>
-        </div>
+    <!-- Tela do jogo -->
+    <div id="tela-jogo" class="fade" style="display: none;">
+        <header>
+           <h1>Adivinhe o número</h1>
+        </header>
+        <section>
+            <div id="status-bar">
+                <p id="status" style="color: red; font-size: 40px;">♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥</p>
+            </div>
 
-    </section>
-    <footer>
-      <p id="txtRodape">Desenvolvido na displina WEB1</p>
-    </footer>
+            <div id="numero">
+                <p id="msgNumero" style="font-size: 33px;"><strong>O número secreto está entre 1 e 100.</strong></p>
+                <div style="margin-top: 15px; text-align: center;">
+                    <input type="number" id="num1" placeholder="Digite seu palpite">
+                    <button id="btChutar">Chutar</button>
+                </div>
+            </div>
+
+            <div id="resultado">
+                <p style="font-size: 33px;"><strong>Histórico de Palpites</strong></p>
+                <p id="txtResultado">...</p>
+            </div>
+
+            <div id="voltar-container" style="text-align: center; display: none;">
+                <button id="btVoltar">Voltar ao Menu</button>
+            </div>
+        </section>
+
+        <footer>
+            <p id="txtRodape">Desenvolvido na disciplina WEB1</p>
+        </footer>
+    </div>
 
     <script src="interacao.js"></script>
 </body>
