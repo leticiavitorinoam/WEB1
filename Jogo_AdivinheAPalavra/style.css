@@ -16,15 +16,15 @@ section {
 }
 
 div#box-imagem {
-    //background-color: antiquewhite;
+    background-color: antiquewhite;
     border-radius: 10px;
     height: 150px;
     width: 400px;
     margin: 10px auto;
 
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
 }
 div#box-iniciar{
     height: 40px;
@@ -59,9 +59,9 @@ div#box-teclado {
 
     margin: auto;
 
-    gap: 1px; /*espaço entre os botões*/
+    gap: 1px; 
     display: flex;
-    flex-wrap: wrap; /* permite quebrar linha automaticamente */
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
 }
@@ -69,11 +69,11 @@ div#box-teclado {
     background-color: #cfa97e;
     color: white;
     font-weight: bold;
-    font-size: 20px;        /* 🔹 Aumenta o tamanho da letra */
+    font-size: 20px; 
     border: none;
-    border-radius: 8px;     /* 🔹 Deixa mais arredondado */
-    padding: 10px 14px;     /* 🔹 Aumenta o tamanho do botão */
-    margin: 6px;            /* 🔹 Mais espaçamento entre botões */
+    border-radius: 8px; 
+    padding: 10px 14px;
+    margin: 6px;           
     min-height: 100px;
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
