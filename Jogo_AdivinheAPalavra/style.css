@@ -7,7 +7,7 @@ text-align: center;
 }
 
 #palavra {
-font-size: 56px; /* maior */
+font-size: 56px; 
 font-weight: bold;
 letter-spacing: 6px;
 }
@@ -26,11 +26,11 @@ gap: 12px;
 button.tecla {
 background-color: #cfa97e;
 color: white;
-font-size: 30px; /* maior */
+font-size: 30px; 
 padding: 16px;
 border: none;
 border-radius: 12px;
-width: 74px; /* maior */
+width: 74px; 
 height: 74px;
 transition: 0.12s;
 cursor: pointer;
@@ -56,7 +56,7 @@ margin-top: 20px;
 background-color: #DC143C;
 color: white;
 padding: 16px 32px;
-font-size: 26px; /* maior */
+font-size: 26px;
 border: none;
 border-radius: 12px;
 cursor: pointer;
@@ -88,7 +88,7 @@ border-radius: 16px;
 }
 
 #popup-msg {
-font-size: 36px; /* maior */
+font-size: 36px;
 margin-bottom: 22px;
 }
 
@@ -162,7 +162,6 @@ button.tecla { width: 54px; height: 54px; font-size: 20px; }
     transition: 0.25s;
 }
 
-/* Hover */
 .btn-nivel:hover {
     background: #d46565;
     transform: scale(1.1);
